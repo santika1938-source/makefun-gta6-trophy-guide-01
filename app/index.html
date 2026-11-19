@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">L</div>
+    <div>
+      <h1>Leonida Legend</h1>
+      <p class="tagline">Grand Theft Auto VI · PlayStation 5 trophy guide &amp; tracker — works fully offline</p>
+    </div>
+  </div>
+  <div id="progress-panel">
+    <div id="progress-count">0 of 55 earned</div>
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+    <div id="progress-grades"></div>
+  </div>
+</header>
+
+<nav id="view-tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="tab active">Checklist &amp; guides</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap to the platinum</button>
+  <button type="button" data-view="missables" class="tab">Missables</button>
+</nav>
+
+<section id="toolbar" aria-label="Filters and settings">
+  <div id="kind-filters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="chip active">All</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+    <button type="button" data-kind="activities" class="chip">Activities</button>
+    <button type="button" data-kind="online" class="chip">Online</button>
+  </div>
+  <label class="tool">Grade
+    <select id="grade-filter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="tool grow">Search
+    <input id="search" type="search" placeholder="Trophy name or description…">
+  </label>
+  <label class="tool check"><input id="spoiler-toggle" type="checkbox" checked> Hide story spoilers</label>
+  <label class="tool check"><input id="hide-earned-toggle" type="checkbox"> Hide earned</label>
+  <button id="export-btn" type="button">Export progress</button>
+  <label id="import-label">Import progress <input id="import-input" type="file" accept="application/json"></label>
+</section>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div id="list-pane">
+      <p id="list-summary"></p>
+      <div id="trophy-list"></div>
+    </div>
+    <aside id="detail-pane" aria-label="Trophy guide"></aside>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="roadmap-body"></div>
+    <aside id="roadmap-detail" class="side-detail" aria-label="Trophy guide"></aside>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <div id="missables-body"></div>
+    <aside id="missables-detail" class="side-detail" aria-label="Trophy guide"></aside>
+  </section>
+</main>
+
+<footer>
+  <p id="list-makeup">The official list: 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden on PlayStation until earned. This list has no online trophies: every description is single-player or partner co-op, so the Online filter is honestly empty.</p>
+  <p id="sources-line"></p>
+  <p>Guides are this app's own words, written from the official descriptions and cited per trophy; specifics not yet knowable for a game released on 2026-11-19 are marked “to be confirmed”. No Rockstar Games logo, artwork or trophy icons are used — the medals are drawn with CSS. Progress is stored only in your browser (localStorage).</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
